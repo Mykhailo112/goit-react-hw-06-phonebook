@@ -31,7 +31,7 @@ export const ContactForm = () => {
     const normalizedName = data.name.toLowerCase();
 
     if (contactItems.find(item => item.name.toLowerCase() === normalizedName)) {
-      return alert`${data.name} is already in contacts`;
+      return alert(`${data.name} is already in contacts`);
     }
     dispatch(addContact(data));
   };
